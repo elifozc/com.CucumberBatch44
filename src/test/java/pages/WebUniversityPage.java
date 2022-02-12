@@ -8,8 +8,10 @@ import utilities.Driver;
 public class WebUniversityPage {
 
 
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
+       public WebUniversityPage(){
+           PageFactory.initElements(Driver.getDriver(),this);
+       }
+
     @FindBy(xpath = "(//div[@class='section-title'])[2]")
     public WebElement webUniversityLoginPortal;
 
