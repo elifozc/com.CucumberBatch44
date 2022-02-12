@@ -10,7 +10,9 @@ public class ConfigReader {
     public static Properties properties;
 
     static {
-        String path="configration.properties";
+
+        String path="configuration.properties";
+
         try {
 
             FileInputStream fis=new FileInputStream(path);
@@ -21,10 +23,9 @@ public class ConfigReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
     }
-
-
-
 
 
     public static String getProperty(String key){
@@ -33,4 +34,10 @@ public class ConfigReader {
     }
 
 
+
+
+
+
 }
+
+
