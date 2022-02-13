@@ -17,6 +17,12 @@ public class HotelMyCampStepDefinitions {
         hmcPage.mainPageLoginLinki.click();
 
     }
+
+    @Then("Create a new account butonuna tiklar")
+    public void create_a_new_account_butonuna_tiklar() {
+    hmcPage.createNewAccountButonu.click();
+    }
+
     @Then("kullanici adi olarak {string} girer")
     public void kullanici_adi_olarak_girer(String kullaniciTipi) {
         hmcPage.usernameTextBox.sendKeys(ConfigReader.getProperty(kullaniciTipi));
@@ -27,11 +33,17 @@ public class HotelMyCampStepDefinitions {
         hmcPage.passwordTextBox.sendKeys(ConfigReader.getProperty(passwordTuru));
 
     }
-    @Then("Login butonuna basar")
-    public void login_butonuna_basar() {
-        hmcPage.loginButonu.click();
 
-    }
+
+
+        @Then("login butonuna basar")
+        public void login_butonuna_basar() {
+           hmcPage.loginButonu.click();
+        }
+
+
+
+
     @Then("basarili olarak giris yapildigini test eder")
     public void basarili_olarak_giris_yapildigini_test_eder() {
 

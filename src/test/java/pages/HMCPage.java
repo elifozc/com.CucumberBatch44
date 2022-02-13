@@ -14,11 +14,19 @@ public class HMCPage {
     @FindBy(xpath = "//a[@href='/Account/Logon']")
     public WebElement mainPageLoginLinki;
 
+    @FindBy(xpath ="//span[@class='btn btn-primary py-3 px-5']" )
+    public WebElement createNewAccountButonu;
+
+
     @FindBy(id="UserName")
     public WebElement usernameTextBox;
 
     @FindBy(id="Password")
     public WebElement passwordTextBox;
+
+    @FindBy(xpath = "//input[@id='Email']")
+    public WebElement emailTextboxButonu;
+
 
     @FindBy(id="btnSubmit")
     public WebElement loginButonu;
